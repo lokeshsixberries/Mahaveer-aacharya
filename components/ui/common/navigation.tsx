@@ -206,11 +206,6 @@ const Navigation: React.FC = () => {
       description: "About Advocate Mahaveer Aacharya",
     },
     {
-      label: "Gallery",
-      href: "/gallery",
-      description: "Professional photos and events",
-    },
-    {
       label: "Contact",
       href: "/contact",
       description: "Get in touch with us",
