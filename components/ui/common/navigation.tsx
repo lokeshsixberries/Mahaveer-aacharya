@@ -11,6 +11,7 @@ import {
   SignedOut,
   UserButton,
   useAuth,
+  useUser
 } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -179,7 +180,8 @@ interface NavLink {
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const pathname = usePathname();
-  const { isSignedIn, user } = useAuth();
+  const { isSignedIn } = useAuth();
+  const {user} = useUser();
 
   // Check if the logged-in user is the admin
   const isAdmin =

@@ -341,7 +341,7 @@ const ServicesPage = () => {
                         </div>
                       ))}
                     </div>
-                    <p className="text-gray-600 italic">"{testimonial.text}"</p>
+                    <p className="text-gray-600 italic">{testimonial.text}</p>
                   </div>
                   <Separator className="my-4" />
                   <div>
